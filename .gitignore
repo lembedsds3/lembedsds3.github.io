@@ -3,3 +3,7 @@ node_modules/
 .env
 .DS_Store
 *.pdf
+.claude/
+# Original asset files (stored in public/ instead)
+041359f6d1eefe866c8ffd3fee962fec7dca64d5d6d73e34656d829027bc3cde.jpg
+fig1.png
