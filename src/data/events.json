@@ -1,0 +1,172 @@
+[
+  {
+    "id": "2026-06-10-feldens",
+    "date": "2026-06-10",
+    "type": "lecture",
+    "title": "More Care, Less Cash? Unpacking the EU's Caregivers Labor Market Losses in Late Career",
+    "speaker": "Tallys Feldens",
+    "affiliation": "Sant'Anna School of Advanced Studies",
+    "abstract": "Study examining how informal caregiving affects employment income, pension income, and retirement decisions for individuals over 50 using SHARE data (2006–2022). Uses propensity score matching and event study estimation to find that caregiving correlates with lower employment income and higher retirement likelihood, with effects persisting after caregiving ends.",
+    "photo": "tallys-feldens.jpg"
+  },
+  {
+    "id": "2026-06-03-laguerre",
+    "date": "2026-06-03",
+    "type": "science-meeting",
+    "title": "Is Sophistication a Panacea? The Learning Capacity of Random Feature Models for Financial Forecasting",
+    "speaker": "Martial Laguerre",
+    "affiliation": "",
+    "abstract": "An investigation into whether increased model complexity actually yields predictive gains in financial forecasting using random feature models.",
+    "photo": "martial-laguerre.jpg"
+  },
+  {
+    "id": "2026-05-27-cloud",
+    "date": "2026-05-27",
+    "type": "journal-club",
+    "title": "Language Models Transmit Behavioural Traits Through Hidden Signals in Data",
+    "speaker": "Cloud et al.",
+    "affiliation": "Nature 652, 615–621 (2026)",
+    "abstract": "Cloud et al. show that language models encode and transmit subtle behavioural traits via statistical regularities embedded in training data, with implications for alignment and interpretability research.",
+    "photo": ""
+  },
+  {
+    "id": "2026-05-20-emer",
+    "date": "2026-05-20",
+    "type": "science-meeting",
+    "title": "When Text Becomes Network: Stability, Uncertainty, and the Construction of Social Graphs",
+    "speaker": "Lorenzo Emer",
+    "affiliation": "",
+    "abstract": "Examines the reliability of text-derived social networks across five corpora: the Epstein files, the Mueller Report, Wikipedia, Gutenberg novels, and Reuters news. Quantifies instability and uncertainty in the graph construction pipeline.",
+    "photo": "lorenzo-emer.jpg"
+  },
+  {
+    "id": "2026-05-06-crippa",
+    "date": "2026-05-06",
+    "type": "lecture",
+    "title": "Identification, Estimation and Inference in Two-Sided Interaction Models",
+    "speaker": "Federico Crippa",
+    "affiliation": "Northwestern University",
+    "abstract": "Introduces the Tukey model to capture complementarities in two-sided interactions. Establishes identification trade-offs between interaction function flexibility and network density, and proposes a cycle-based estimator for sparse networks with asymptotic normality properties.",
+    "photo": "federico-crippa.jpg"
+  },
+  {
+    "id": "2026-04-29-lu-assistant",
+    "date": "2026-04-29",
+    "type": "journal-club",
+    "title": "The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models",
+    "speaker": "Lu et al.",
+    "affiliation": "arXiv:2601.10387 (2026)",
+    "abstract": "Lu et al. introduce the concept of the 'assistant axis' to characterize and stabilize the default behavioral persona of language models, offering a framework for consistent and predictable model behavior across deployments.",
+    "photo": ""
+  },
+  {
+    "id": "2026-04-17-tschaikowski",
+    "date": "2026-04-17",
+    "type": "lecture",
+    "title": "Model Reduction Across Disciplines and Approaches",
+    "speaker": "Max Tschaikowski",
+    "affiliation": "Università Sapienza Roma",
+    "abstract": "Surveys model reduction techniques preserving properties of interest across network science, systems biology, and quantum computing. Focuses on approaches derived from linear invariant subspaces and their cross-disciplinary applicability.",
+    "photo": "max-tschaikowski.jpg"
+  },
+  {
+    "id": "2026-04-15-lu-automation",
+    "date": "2026-04-15",
+    "type": "journal-club",
+    "title": "Towards End-to-End Automation of AI Research",
+    "speaker": "Lu et al.",
+    "affiliation": "Nature 651, 914–919 (2026)",
+    "abstract": "Lu et al. present a framework for automating the full AI research pipeline — from hypothesis generation and experiment design to result analysis and paper writing — demonstrating successful automation across multiple research domains.",
+    "photo": ""
+  },
+  {
+    "id": "2026-04-08-centorrino",
+    "date": "2026-04-08",
+    "type": "lecture",
+    "title": "Nowcasting GDP in a Data-Poor Environment",
+    "speaker": "Samuele Centorrino",
+    "affiliation": "International Monetary Fund",
+    "abstract": "Proposes block-bootstrap cross-validation for machine learning hyperparameter tuning in data-scarce contexts. Applies the framework to African economies for real-time economic activity measurement using non-traditional data sources.",
+    "photo": "samuele-centorrino.jpg"
+  },
+  {
+    "id": "2026-04-08-blando",
+    "date": "2026-04-08",
+    "type": "science-meeting",
+    "title": "Statistical Model Checking of the Island Model",
+    "speaker": "Stefano Blando",
+    "affiliation": "",
+    "abstract": "Applies formal statistical model checking to agent-based economic models, specifically the island model, providing rigorous probabilistic guarantees on model behavior and emergent properties.",
+    "photo": "stefano-blando.jpg"
+  },
+  {
+    "id": "2026-04-01-wang",
+    "date": "2026-04-01",
+    "type": "journal-club",
+    "title": "LineGRN: A Line Graph Neural Network for Gene Regulatory Network Inference",
+    "speaker": "Wang et al.",
+    "affiliation": "IEEE J. Biomed. Health Inform., vol. 30, no. 2 (2026)",
+    "abstract": "Wang et al. propose LineGRN, a graph neural network architecture operating on line graphs of gene interaction networks, achieving state-of-the-art performance on gene regulatory network inference benchmarks.",
+    "photo": ""
+  },
+  {
+    "id": "2026-03-18-asai",
+    "date": "2026-03-18",
+    "type": "journal-club",
+    "title": "Synthesizing Scientific Literature with Retrieval-Augmented Language Models",
+    "speaker": "Asai et al.",
+    "affiliation": "Nature 650, 857–863 (2026)",
+    "abstract": "Inaugural journal club session. Asai et al. present a retrieval-augmented language model framework for synthesizing scientific literature, demonstrating accurate, grounded summarization across diverse research fields.",
+    "photo": ""
+  },
+  {
+    "id": "2026-03-04-baugh",
+    "date": "2026-03-04",
+    "type": "lecture",
+    "title": "Hierarchical Gaussian Processes for Bayesian Modeling and Causal Inference",
+    "speaker": "Sam Baugh",
+    "affiliation": "Penn State University",
+    "abstract": "Develops computationally feasible hierarchical Gaussian process models for climate science inference. Addresses equilibrium climate sensitivity estimation and temperature-drought causal effects with rigorous uncertainty quantification.",
+    "photo": "sam-baugh.jpg"
+  },
+  {
+    "id": "2026-02-04-lenton",
+    "date": "2026-02-04",
+    "type": "lecture",
+    "title": "Positive Tipping Points to Avoid Climate Tipping Points",
+    "speaker": "Tim Lenton",
+    "affiliation": "University of Exeter",
+    "abstract": "Summarizes the current scientific evidence on climate tipping points, then identifies the social, technological, and political tipping points required to limit global warming to below 2°C — framing sustainability transitions as dynamical systems problems.",
+    "photo": "tim-lenton.jpg"
+  },
+  {
+    "id": "2026-01-21-mccartan",
+    "date": "2026-01-21",
+    "type": "lecture",
+    "title": "Identification and Semiparametric Estimation of Conditional Means from Aggregate Data",
+    "speaker": "Cory McCartan",
+    "affiliation": "Penn State University",
+    "abstract": "Introduces a method for estimating individual-level relationships from aggregated data, combining flexible machine learning estimation with sensitivity analysis tools. Applied to ecological inference and small-area estimation problems.",
+    "photo": "cory-mccartan.jpg"
+  },
+  {
+    "id": "2025-12-10-tripodi",
+    "date": "2025-12-10",
+    "type": "lecture",
+    "title": "Trajectories and Collaboration in the Knowledge Space",
+    "speaker": "Giorgio Tripodi",
+    "affiliation": "Northwestern University",
+    "abstract": "Traces 12,000+ faculty members across 15 disciplines, finding publication peaks pre-tenure, divergent post-tenure trajectories by field type, increased novel research post-tenure with fewer highly-cited papers, and differential impacts of team structures on collaboration outcomes.",
+    "photo": "giorgio-tripodi.jpg"
+  },
+  {
+    "id": "2025-11-12-insolia",
+    "date": "2025-11-12",
+    "type": "lecture",
+    "title": "Recent Advances in Equivalence Testing",
+    "speaker": "Luca Insolia",
+    "affiliation": "University of Geneva",
+    "abstract": "Proposes finite-sample adjustments to the Two One-Sided Tests (TOST) procedure for assessing whether effects fall within predetermined equivalence regions. Demonstrates improved statistical power across multivariate scenarios with applications to bioequivalence and replication studies.",
+    "photo": "luca-insolia.jpg"
+  }
+]
