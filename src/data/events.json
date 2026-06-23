@@ -6,7 +6,8 @@
     "title": "More Care, Less Cash? Unpacking the EU's Caregivers Labor Market Losses in Late Career",
     "speaker": "Tallys Feldens",
     "affiliation": "Sant'Anna School of Advanced Studies",
-    "abstract": "Study examining how informal caregiving affects employment income, pension income, and retirement decisions for individuals over 50 using SHARE data (2006–2022). Uses propensity score matching and event study estimation to find that caregiving correlates with lower employment income and higher retirement likelihood, with effects persisting after caregiving ends.",
+    "website": "https://www.santannapisa.it/en/tallys-kalynka-feldens",
+    "abstract": "Informal caregivers are an important complement to formal healthcare, especially by helping the patients with their daily activities, which prevents institutionalization. However, by providing informal care, people might be giving up paid working hours, which can also affect their propensity to retire when they are in late career. Thus, it is important to ascertain the amount of change in working hours, personal income and transition to retirement that is linked to informal caretaking. Data from 2006 to 2022 of the Survey of Health, Ageing and Retirement in Europe (SHARE) is used to collect the individuals over 50 years who reported to have helped people inside or outside their household with personal care, practical household help or help with paperwork. We explored three datasets: the ones who became a caregiver, the ones who left the caregiver role, and those who left the caregiver role due to the death of the care receiver. We compared these three samples against the ones who were never caregivers and employed an event study estimation. To account for the (possibly) non-random allocation in the choice and ability to become a caregiver, the first step in the analysis entailed a propensity score matching (PSM) selecting only those who retain similar observable characteristics. Becoming a caregiver is associated with lower employment income, raising pensions income and a higher chance of retirement. This trend is not reversed when people leave the caregiver roles: either for the ones who stop caregiving for any reason or for the ones who experienced the death of the cared person, the aggregated dynamic effects point to a reduction in employment income and raise in the pension’s income. We investigated age, gender, place of caregiving, country of residence and inter-household effects. These results indicate that caregiving roles have short to medium-term effects and probably affect the late-career choices of the ones who have someone to take care of. Although the provision of informal care can contribute to social support and even generate savings to the health care system, our estimates show that it has a non-negligible impact on late-career choices. Specific policies should address this important trade-off and estimate incentives to decrease the burden of informal care and its financial implications without compromising productivity and human capital losses.",
     "photo": "tallys-feldens.jpg"
   },
   {
@@ -16,7 +17,8 @@
     "title": "Is Sophistication a Panacea? The Learning Capacity of Random Feature Models for Financial Forecasting",
     "speaker": "Martial Laguerre",
     "affiliation": "",
-    "abstract": "An investigation into whether increased model complexity actually yields predictive gains in financial forecasting using random feature models.",
+    "website": "",
+    "abstract": "",
     "photo": "martial-laguerre.jpg"
   },
   {
@@ -26,7 +28,8 @@
     "title": "Language Models Transmit Behavioural Traits Through Hidden Signals in Data",
     "speaker": "Cloud et al.",
     "affiliation": "Nature 652, 615–621 (2026)",
-    "abstract": "Cloud et al. show that language models encode and transmit subtle behavioural traits via statistical regularities embedded in training data, with implications for alignment and interpretability research.",
+    "website": "",
+    "abstract": "Discussion of Cloud et al. (2026), published in Nature 652, 615–621.",
     "photo": ""
   },
   {
@@ -36,7 +39,8 @@
     "title": "When Text Becomes Network: Stability, Uncertainty, and the Construction of Social Graphs",
     "speaker": "Lorenzo Emer",
     "affiliation": "",
-    "abstract": "Examines the reliability of text-derived social networks across five corpora: the Epstein files, the Mueller Report, Wikipedia, Gutenberg novels, and Reuters news. Quantifies instability and uncertainty in the graph construction pipeline.",
+    "website": "",
+    "abstract": "This research examines the reliability of social networks reconstructed from textual corpora using entity co-occurrence methods. The study asks whether text-derived social graphs capture meaningful relational structure or are primarily artifacts of modelling decisions and noisy data. Five heterogeneous corpora are analyzed, including the Epstein files, the Mueller Report, Wikipedia biographies, Gutenberg novels, and Reuters news articles. The methodology combines network reconstruction, resampling, null-model comparison, community detection, and variance decomposition. Networks are built using different NLP pipelines, entity canonicalization strategies, and context definitions (sentence vs. paragraph windows). Stability is evaluated through repeated graph reconstructions and comparisons with randomized null models that preserve entity frequencies and context sizes while destroying co-occurrence structure. Results show that observed text networks consistently outperform null models across all corpora, indicating that co-occurrence patterns in real texts are strongly non-random and encode meaningful social structure. Community detection is also substantially more stable in observed networks, particularly for fictional narratives such as Gutenberg novels. The study’s main finding is that segmentation choices — especially sentence versus paragraph windows — are the dominant source of variation in inferred network structure, while differences between NLP tools contribute relatively little. Overall, the research provides a systematic framework for evaluating uncertainty and robustness in text-derived social network analysis.",
     "photo": "lorenzo-emer.jpg"
   },
   {
@@ -46,7 +50,8 @@
     "title": "Identification, Estimation and Inference in Two-Sided Interaction Models",
     "speaker": "Federico Crippa",
     "affiliation": "Northwestern University",
-    "abstract": "Introduces the Tukey model to capture complementarities in two-sided interactions. Establishes identification trade-offs between interaction function flexibility and network density, and proposes a cycle-based estimator for sparse networks with asymptotic normality properties.",
+    "website": "https://fedecrp.github.io/",
+    "abstract": "This paper studies a class of models for two-sided interactions, where outcomes depend on latent characteristics of two distinct agent types. Models in this class have two core elements: the matching network, which records which agent pairs interact, and the interaction function, which maps latent characteristics of these agents to outcomes and determines the role of complementarities. I introduce the Tukey model, which captures complementarities with a single interaction parameter, along with two extensions that allow richer complementarity patterns. First, I establish an identification trade-off between the flexibility of the interaction function and the density of the matching network: the Tukey model is identified under mild conditions, whereas the more flexible extensions require dense networks that are rarely observed in applications. Second, I propose a cycle-based estimator for the Tukey interaction parameter and show that it is consistent and asymptotically normal even when the network is sparse. Third, I use its asymptotic distribution to construct a formal test of no complementarities. Finally, an empirical illustration shows that the Tukey model recovers economically meaningful complementarities.",
     "photo": "federico-crippa.jpg"
   },
   {
@@ -56,7 +61,8 @@
     "title": "The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models",
     "speaker": "Lu et al.",
     "affiliation": "arXiv:2601.10387 (2026)",
-    "abstract": "Lu et al. introduce the concept of the 'assistant axis' to characterize and stabilize the default behavioral persona of language models, offering a framework for consistent and predictable model behavior across deployments.",
+    "website": "",
+    "abstract": "Discussion of Lu et al. (2026), arXiv:2601.10387.",
     "photo": ""
   },
   {
@@ -66,7 +72,8 @@
     "title": "Model Reduction Across Disciplines and Approaches",
     "speaker": "Max Tschaikowski",
     "affiliation": "Università Sapienza Roma",
-    "abstract": "Surveys model reduction techniques preserving properties of interest across network science, systems biology, and quantum computing. Focuses on approaches derived from linear invariant subspaces and their cross-disciplinary applicability.",
+    "website": "https://maxtschaikowski.com/",
+    "abstract": "Model reductions compress an original model to a smaller one while preserving properties of interest, thus allowing to reduce simulation and computation times. Network embedding, for instance, allows to project networks onto lower-dimensional spaces while preserving similarities among nodes. Similarly, quantum bisimulation compresses quantum circuits without altering a quantum measurement of interest, while differential equivalence achieves the same for chemical reaction networks in case of biological measurement. In this talk, we will give a high-level overview of model reductions that arise from linear invariant subspaces. The first part will focus on graph-based, while the second part will discuss geometry-based approaches. Their applicability will be demonstrated on benchmarks from network science, systems biology and quantum computing.",
     "photo": "max-tschaikowski.jpg"
   },
   {
@@ -76,7 +83,8 @@
     "title": "Towards End-to-End Automation of AI Research",
     "speaker": "Lu et al.",
     "affiliation": "Nature 651, 914–919 (2026)",
-    "abstract": "Lu et al. present a framework for automating the full AI research pipeline — from hypothesis generation and experiment design to result analysis and paper writing — demonstrating successful automation across multiple research domains.",
+    "website": "",
+    "abstract": "Discussion of Lu et al. (2026), published in Nature 651, 914–919.",
     "photo": ""
   },
   {
@@ -86,17 +94,19 @@
     "title": "Nowcasting GDP in a Data-Poor Environment",
     "speaker": "Samuele Centorrino",
     "affiliation": "International Monetary Fund",
-    "abstract": "Proposes block-bootstrap cross-validation for machine learning hyperparameter tuning in data-scarce contexts. Applies the framework to African economies for real-time economic activity measurement using non-traditional data sources.",
+    "website": "https://scentorrino.github.io/home.html",
+    "abstract": "The timely and high-frequency measurement of economic activity is a necessary condition for the formulation of evidence-based policies. However, it remains largely inaccessible in low-income, fragile, and conflict-affected states, where quarterly GDP estimates are unavailable or published with substantial lags. Non-traditional data sources provide a viable avenue for constructing real-time proxies of economic activity. However, machine learning estimators, the canonical tools for exploiting such high-dimensional data, exhibit systematic performance degradation in these contexts: the combination of short time-series and conventional cross-validation schemes induces overfitting and pronounced deterioration in out-of-sample predictive accuracy. This paper addresses this methodological gap by proposing a block-bootstrap cross-validation procedure tailored to hyperparameter tuning of machine learning models under data-scarce conditions. We apply this framework to nowcast quarterly economic activity across a heterogeneous sample of developing and low-income economies, and establish its out-of-sample validity through Monte Carlo simulations and an empirical application to several African countries. The proposed methodology extends the nowcasting toolkit to environments characterized by data paucity, institutional fragility, and weak structural fundamentals, with direct implications for economic surveillance, crisis response, and resilience-building in data-poor contexts.",
     "photo": "samuele-centorrino.jpg"
   },
   {
     "id": "2026-04-08-blando",
     "date": "2026-04-08",
     "type": "science-meeting",
-    "title": "Statistical Model Checking of the Island Model",
+    "title": "Statistical Model Checking of the Island Model: An Established Economic Agent-Based Model of Endogenous Growth",
     "speaker": "Stefano Blando",
     "affiliation": "",
-    "abstract": "Applies formal statistical model checking to agent-based economic models, specifically the island model, providing rigorous probabilistic guarantees on model behavior and emergent properties.",
+    "website": "",
+    "abstract": "Agent-based models (ABMs) are increasingly used to study complex economic phenomena such as endogenous growth, but their analysis typically relies on ad-hoc Monte Carlo exercises without formal statistical guarantees. We show how statistical model checking (SMC), and in particular Multi-VeStA, can automate and enrich the analysis of a seminal ABM: the Island Model of Fagiolo and Dosi, which captures the exploration-exploitation trade-off in technological search. We reproduce key stylized facts from the original model with formal confidence intervals, confirm the optimality of moderate exploration rates, and perform a counterfactual sensitivity analysis across returns to scale, skill transfer, and knowledge locality. Using MultiVeStA's built-in Welch's t-test, 6 out of 7 pairwise parameter comparisons yield statistically different growth trajectories, while the exception reveals a saturation effect in knowledge locality. Our results demonstrate that SMC offers a principled, reproducible methodology for the quantitative analysis of agent-based economic models.",
     "photo": "stefano-blando.jpg"
   },
   {
@@ -105,8 +115,9 @@
     "type": "journal-club",
     "title": "LineGRN: A Line Graph Neural Network for Gene Regulatory Network Inference",
     "speaker": "Wang et al.",
-    "affiliation": "IEEE J. Biomed. Health Inform., vol. 30, no. 2 (2026)",
-    "abstract": "Wang et al. propose LineGRN, a graph neural network architecture operating on line graphs of gene interaction networks, achieving state-of-the-art performance on gene regulatory network inference benchmarks.",
+    "affiliation": "IEEE J. Biomed. Health Inform., vol. 30, no. 2, pp. 1785–1797 (2026)",
+    "website": "",
+    "abstract": "Discussion of Wang et al. (2026), published in IEEE Journal of Biomedical and Health Informatics.",
     "photo": ""
   },
   {
@@ -116,7 +127,8 @@
     "title": "Synthesizing Scientific Literature with Retrieval-Augmented Language Models",
     "speaker": "Asai et al.",
     "affiliation": "Nature 650, 857–863 (2026)",
-    "abstract": "Inaugural journal club session. Asai et al. present a retrieval-augmented language model framework for synthesizing scientific literature, demonstrating accurate, grounded summarization across diverse research fields.",
+    "website": "",
+    "abstract": "Discussion of Asai et al. (2026), published in Nature 650, 857–863. Inaugural journal club session.",
     "photo": ""
   },
   {
@@ -126,7 +138,8 @@
     "title": "Hierarchical Gaussian Processes for Bayesian Modeling and Causal Inference",
     "speaker": "Sam Baugh",
     "affiliation": "Penn State University",
-    "abstract": "Develops computationally feasible hierarchical Gaussian process models for climate science inference. Addresses equilibrium climate sensitivity estimation and temperature-drought causal effects with rigorous uncertainty quantification.",
+    "website": "https://science.psu.edu/stat/people/sxb6332",
+    "abstract": "While the physical science of climate change provides valuable understanding of the underlying dynamics, inferring these dynamics from observations remains challenging due to the paradoxical 'small data' nature of the problem: while the number and representativeness of high-quality climate observations continues to increase, in a sense there will only ever be a single observation of the global climate system as a whole. Inference on the basis of a single observation is a common setting in spatio-temporal statistics, where Gaussian process models have proven to be a flexible and powerful framework for modeling physical and non-physical processes alike. However, despite the advantages of the Gaussian process framework, applications to climate data remain methodologically challenging due to the presence of complex correlation structures (which exhibit extensive non-stationary and anisotropic behavior) as well as the large number of available observations (precluding the direct calculation of likelihoods). In this talk, we discuss the development of computationally feasible hierarchical Gaussian process models for addressing two important inference problems in climate science: constraining equilibrium climate sensitivity from ocean heat content observations, and estimating the causal effect of changing distributions of temperatures on drought conditions. These developments permit observationally-driven estimates of key climate parameters with rigorous uncertainty quantification, which can increase confidence in estimates based on climate simulations. Extensions for integrating observations and climate model simulation output in a unified Bayesian model will be discussed.",
     "photo": "sam-baugh.jpg"
   },
   {
@@ -136,7 +149,8 @@
     "title": "Positive Tipping Points to Avoid Climate Tipping Points",
     "speaker": "Tim Lenton",
     "affiliation": "University of Exeter",
-    "abstract": "Summarizes the current scientific evidence on climate tipping points, then identifies the social, technological, and political tipping points required to limit global warming to below 2°C — framing sustainability transitions as dynamical systems problems.",
+    "website": "https://experts.exeter.ac.uk/19727-tim-lenton",
+    "abstract": "Tipping points in climate science normally refer to small changes in the Earth system that unleash much broader, typically damaging impacts that accelerate climate change. Well-known examples are rising sea levels due to disintegration of the Greenland and West Antarctica ice sheets, or the release of methane from the thawing permafrost. They help to underline the urgency of climate action. Today most people understand we must reduce emissions – and very quickly.  In this webinar, Tim will summarise recent evidence regarding climate tipping points, which supports declarations that we are in a ‘climate emergency’. Then he will turn to identifying positive social tipping points that will need to be triggered to have any hope of limiting global warming to well below 2C.",
     "photo": "tim-lenton.jpg"
   },
   {
@@ -146,7 +160,8 @@
     "title": "Identification and Semiparametric Estimation of Conditional Means from Aggregate Data",
     "speaker": "Cory McCartan",
     "affiliation": "Penn State University",
-    "abstract": "Introduces a method for estimating individual-level relationships from aggregated data, combining flexible machine learning estimation with sensitivity analysis tools. Applied to ecological inference and small-area estimation problems.",
+    "website": "https://corymccartan.com/",
+    "abstract": "We introduce a new method for estimating the relationship between two variables at the individual level when only aggregated data are available. A common application in the US is estimating the voting preferences of different racial groups from aggregate election totals and census data. I will discuss how common approaches rely on overly strong assumptions and will present a new identifying assumption along with a more flexible, machine learning-based estimation method.  Time permitting, I will discuss an accompanying sensitivity analysis that can be used to probe the key identifying assumption.",
     "photo": "cory-mccartan.jpg"
   },
   {
@@ -156,7 +171,8 @@
     "title": "Trajectories and Collaboration in the Knowledge Space",
     "speaker": "Giorgio Tripodi",
     "affiliation": "Northwestern University",
-    "abstract": "Traces 12,000+ faculty members across 15 disciplines, finding publication peaks pre-tenure, divergent post-tenure trajectories by field type, increased novel research post-tenure with fewer highly-cited papers, and differential impacts of team structures on collaboration outcomes.",
+    "website": "https://www.giorgiotripodi.com/",
+    "abstract": "Scientific discoveries and technological breakthroughs do not emerge in a vacuum. They are developed by individuals who follow heterogeneous career paths, engage in collaborations, and make strategic choices. Understanding scientists’ research trajectories is, therefore, a first step toward uncovering the hidden sources of creativity and innovation. In the US academic system, few institutions are more consequential than tenure. Tenure may serve as a selection mechanism (screening in high-output researchers), a dynamic incentive mechanism (stimulating pre-tenure productivity but dampening post-tenure output), and a creative search mechanism (enabling higher-risk exploration). To test these possibilities, we integrate data from seven sources to trace more than 12,000 faculty members across 15 disciplines. The analysis shows that publication rates rise sharply during the tenure track, peaking just before tenure. Post-tenure, however, trajectories diverge: lab-based fields sustain high output, while non-lab-based fields typically decline. Across fields, tenured faculty pursue more novel work but produce fewer highly cited papers. In addition, preliminary results highlight how scientific team structures and leadership roles shape collaboration outcomes and how individuals can remain productive and impactful in later career stages. Together, these findings underscore how institutional settings can influence the rate and direction of innovation, with implications for individual scholars, universities, and funding agencies.",
     "photo": "giorgio-tripodi.jpg"
   },
   {
@@ -166,7 +182,8 @@
     "title": "Recent Advances in Equivalence Testing",
     "speaker": "Luca Insolia",
     "affiliation": "University of Geneva",
-    "abstract": "Proposes finite-sample adjustments to the Two One-Sided Tests (TOST) procedure for assessing whether effects fall within predetermined equivalence regions. Demonstrates improved statistical power across multivariate scenarios with applications to bioequivalence and replication studies.",
+    "website": "https://www.lucainsolia.com/",
+    "abstract": "Equivalence testing aims to assess whether an effect of interest, such as the difference in means between two treatment outcomes, lies within a predetermined region of practical equivalence. Assessments of equivalence arise in several domains, such as economics, psychology and engineering, and they play a key role in the pharmaceutical sciences (e.g., for the regulatory approval of generic drug products). The standard method to assess equivalence, the Two One-Sided Tests (TOST) procedure, is known to be overly conservative, resulting in a loss of statistical power. To mitigate this problem in the context of averages and quantiles equivalence testing, we propose a general family of finite-sample adjustments for the TOST. These adjustments are designed to ensure that the theoretical test size matches the nominal significance level, leading to uniformly more powerful test procedures compared to the traditional TOST. We establish the theoretical properties of these adjusted procedures, and empirically demonstrate their superior performance through extensive simulations covering a range of challenging scenarios. These include multivariate assessments with relatively small sample sizes, unknown and heterogeneous variances, and various correlation structures. We illustrate the practical relevance of our approach through examples related to economics and the pharmaceutical sciences.",
     "photo": "luca-insolia.jpg"
   }
 ]

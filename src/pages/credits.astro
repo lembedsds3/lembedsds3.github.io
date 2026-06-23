@@ -4,29 +4,41 @@ import Nav from '../components/Nav.astro';
 
 const organizers = [
   {
-    name: "Lorenzo Testa",
-    role: "Organizer",
-    affiliations: [
-      "Ph.D. student, Carnegie Mellon University",
-      "Junior Research Affiliate, Sant’Anna School of Advanced Studies",
-    ],
-    url: "https://testalorenzo.github.io",
+    name: "Irina Carnat",
+    affiliations: ["Sant’Anna School of Advanced Studies"],
+    url: "https://www.santannapisa.it/en/irina-carnat",
+    photo: "irina-carnat.jpg",
+  },
+  {
+    name: "Francesca Chiaromonte",
+    affiliations: ["Penn State University", "Sant’Anna School of Advanced Studies"],
+    url: "https://sites.psu.edu/chiaromonte/",
+    photo: "francesca-chiaromonte.jpg",
+  },
+  {
+    name: "Matteo Coronese",
+    affiliations: ["Sant’Anna School of Advanced Studies"],
+    url: "https://matteocoronese.eu/",
+    photo: "matteo-coronese.jpg",
+  },
+  {
+    name: "Tallys Feldens",
+    affiliations: ["Sant’Anna School of Advanced Studies"],
+    url: "https://www.santannapisa.it/en/tallys-kalynka-feldens",
+    photo: "tallys-feldens.jpg",
   },
   {
     name: "Riccardo Porcedda",
-    role: "Organizer",
-    affiliations: [
-      "Sant’Anna School of Advanced Studies",
-    ],
-    url: "",
+    affiliations: ["Sant’Anna School of Advanced Studies"],
+    url: "https://riccardoporcedda.cv/",
+    photo: "riccardo-porcedda.jpg",
   },
-  // ── Add further organizers here ───────────────────────────────────
-  // {
-  //   name: 'Name Surname',
-  //   role: 'Organizer',
-  //   affiliations: ['Institution'],
-  //   url: '',
-  // },
+  {
+    name: "Lorenzo Testa",
+    affiliations: ["Carnegie Mellon University", "Sant’Anna School of Advanced Studies"],
+    url: "https://testalorenzo.github.io",
+    photo: "lorenzo-testa.jpg",
+  },
 ];
 
 const relatedSeminars = [
@@ -55,20 +67,16 @@ const relatedSeminars = [
   <Nav />
 
   <!-- ── HERO ────────────────────────────────────────────────────── -->
-  <div class="relative">
+  <div class="flex justify-center py-6 px-4">
     <img
-      src="/fig1.png"
-      alt="Pisa"
-      class="w-full h-36 sm:h-52 object-cover object-center"
+      src="/logo.png"
+      alt="L'EMbeDS DS³"
+      class="block w-auto"
+      style="max-height: 220px;"
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#faf8f5]/70 pointer-events-none" />
-    <div class="absolute inset-0 flex items-end">
-      <div class="max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8 pb-6">
-        <h1 class="font-serif text-3xl sm:text-4xl font-bold text-white drop-shadow-md">
-          Credits &amp; Links
-        </h1>
-      </div>
-    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-2">
+    <h1 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Credits &amp; Links</h1>
   </div>
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-14">
@@ -83,9 +91,16 @@ const relatedSeminars = [
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {organizers.map(org => (
           <div class="bg-white rounded-2xl border border-stone-100 shadow-sm p-5 flex items-start gap-4">
-            <!-- Initials avatar -->
-            <div class="w-12 h-12 rounded-full bg-[#9f1239] flex items-center justify-center text-white text-base font-semibold shrink-0">
-              {org.name.split(' ').slice(0, 2).map((w: string) => w[0]).join('')}
+            <!-- Photo or initials avatar -->
+            <div class="relative shrink-0">
+              <img
+                src={`/images/organizers/${org.photo}`}
+                alt={org.name}
+                class="org-photo w-20 h-20 rounded-full object-cover"
+              />
+              <div class="org-fallback hidden w-20 h-20 rounded-full bg-[#9f1239] items-center justify-center text-white text-base font-semibold">
+                {org.name.split(' ').slice(0, 2).map((w: string) => w[0]).join('')}
+              </div>
             </div>
             <div>
               {org.url ? (
@@ -170,7 +185,7 @@ const relatedSeminars = [
             Know someone who would make a great speaker? Let us know.
           </p>
           <a
-            href="https://forms.google.com"
+            href="https://forms.gle/s98j9FEKxyphkbBb6"
             target="_blank"
             rel="noopener"
             class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#9f1239] hover:underline"
@@ -185,6 +200,16 @@ const relatedSeminars = [
     </section>
 
   </main>
+
+  <script>
+    document.querySelectorAll<HTMLImageElement>('.org-photo').forEach(img => {
+      img.addEventListener('error', function () {
+        this.style.display = 'none';
+        const fallback = this.parentElement?.querySelector<HTMLElement>('.org-fallback');
+        if (fallback) fallback.style.display = 'flex';
+      });
+    });
+  </script>
 
   <!-- ── FOOTER ───────────────────────────────────────────────────── -->
   <footer class="border-t border-stone-200 bg-white">

@@ -1,0 +1,113 @@
+---
+// Abstract detail modal — included once in Layout, populated by JS
+---
+
+<div
+  id="abstract-modal"
+  class="fixed inset-0 z-[200] hidden items-center justify-center p-4 sm:p-8"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modal-title"
+>
+  <!-- Backdrop -->
+  <div id="modal-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+
+  <!-- Panel -->
+  <div class="relative z-10 bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[88vh] overflow-y-auto flex flex-col">
+
+    <!-- Header -->
+    <div class="px-6 pt-6 pb-5 border-b border-stone-100 flex items-start gap-4">
+      <div class="flex-1 min-w-0">
+        <div class="flex flex-wrap items-center gap-3 mb-3">
+          <span id="modal-badge" class="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full text-white shrink-0"></span>
+          <time id="modal-date" class="text-sm text-stone-400 font-medium"></time>
+        </div>
+        <h2 id="modal-title" class="font-serif text-xl font-bold text-stone-900 leading-snug mb-2"></h2>
+        <a id="modal-speaker" class="text-sm font-semibold hover:underline underline-offset-2" target="_blank" rel="noopener"></a>
+        <p id="modal-affiliation" class="text-sm text-stone-500 mt-0.5"></p>
+      </div>
+      <button
+        id="modal-close"
+        class="shrink-0 p-2 rounded-lg hover:bg-stone-100 transition-colors text-stone-400 hover:text-stone-700"
+        aria-label="Close"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Abstract body -->
+    <div class="px-6 py-5">
+      <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Abstract</p>
+      <p id="modal-abstract" class="text-base text-stone-700 leading-relaxed"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal    = document.getElementById('abstract-modal') as HTMLElement;
+  const backdrop = document.getElementById('modal-backdrop') as HTMLElement;
+  const closeBtn = document.getElementById('modal-close') as HTMLElement;
+
+  const TYPE_LABELS: Record<string, string> = {
+    'lecture':         'Lecture',
+    'journal-club':    'Journal Club',
+    'science-meeting': 'Science Meeting',
+  };
+  const BADGE_COLORS: Record<string, string> = {
+    'lecture':         '#2563eb',
+    'journal-club':    '#059669',
+    'science-meeting': '#d97706',
+  };
+  const SPEAKER_COLORS: Record<string, string> = {
+    'lecture':         '#1d4ed8',
+    'journal-club':    '#047857',
+    'science-meeting': '#b45309',
+  };
+
+  function openModal(btn: HTMLElement) {
+    const type = btn.dataset.type ?? '';
+
+    const badge = document.getElementById('modal-badge') as HTMLElement;
+    badge.textContent = TYPE_LABELS[type] ?? type;
+    badge.style.backgroundColor = BADGE_COLORS[type] ?? '#666';
+
+    (document.getElementById('modal-date') as HTMLElement).textContent        = btn.dataset.date ?? '';
+    (document.getElementById('modal-title') as HTMLElement).textContent       = btn.dataset.title ?? '';
+    (document.getElementById('modal-affiliation') as HTMLElement).textContent = btn.dataset.affiliation ?? '';
+    (document.getElementById('modal-abstract') as HTMLElement).textContent    = btn.dataset.abstract ?? '';
+
+    const speaker = document.getElementById('modal-speaker') as HTMLAnchorElement;
+    speaker.textContent = btn.dataset.speaker ?? '';
+    speaker.style.color = SPEAKER_COLORS[type] ?? '#333';
+    const website = btn.dataset.website ?? '';
+    if (website) {
+      speaker.href = website;
+      speaker.style.textDecoration = '';
+    } else {
+      speaker.removeAttribute('href');
+      speaker.style.textDecoration = 'none';
+    }
+
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('flex');
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // Attach to any .abstract-trigger present now or added later (delegation)
+  document.addEventListener('click', (e) => {
+    const trigger = (e.target as HTMLElement).closest<HTMLElement>('.abstract-trigger');
+    if (trigger) { openModal(trigger); return; }
+    if (e.target === backdrop) closeModal();
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+</script>

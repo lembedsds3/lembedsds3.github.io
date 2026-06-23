@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import EventCard from '../components/EventCard.astro';
+import type { EventData } from '../components/EventCard.astro';
+import eventsRaw from '../data/events.json';
+
+const events = (eventsRaw as EventData[]).sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+
+const counts = {
+  all:               events.length,
+  lecture:           events.filter(e => e.type === 'lecture').length,
+  'journal-club':    events.filter(e => e.type === 'journal-club').length,
+  'science-meeting': events.filter(e => e.type === 'science-meeting').length,
+};
+---
+
+<Layout
+  title="All Events — L'EMbeDS DS³"
+  description="Full archive of lectures, journal clubs, and science meetings from the L'EMbeDS DS³ seminar series."
+>
+  <Nav />
+
+  <!-- ── PAGE HEADER ───────────────────────────────────── -->
+  <div class="border-b border-stone-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <h1 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 mb-2">All Events</h1>
+      <p class="text-stone-500 text-base">
+        Complete archive of lectures, journal clubs, and science meetings — {counts.all} events.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── EVENTS ─────────────────────────────────────────── -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 pb-20">
+
+    <!-- Filter bar -->
+    <div class="flex flex-wrap gap-2 mb-8" role="group" aria-label="Filter by event type">
+      <button class="filter-pill active" data-filter="all" data-count={counts.all}>
+        All <span class="pill-count">{counts.all}</span>
+      </button>
+      <button class="filter-pill" data-filter="lecture" data-count={counts.lecture}>
+        Lecture <span class="pill-count">{counts.lecture}</span>
+      </button>
+      <button class="filter-pill" data-filter="journal-club" data-count={counts['journal-club']}>
+        Journal Club <span class="pill-count">{counts['journal-club']}</span>
+      </button>
+      <button class="filter-pill" data-filter="science-meeting" data-count={counts['science-meeting']}>
+        Science Meeting <span class="pill-count">{counts['science-meeting']}</span>
+      </button>
+    </div>
+
+    <!-- Count label -->
+    <p id="count-label" class="text-sm text-stone-400 mb-6">{counts.all} events</p>
+
+    <!-- Grid -->
+    <div id="event-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {events.map(event => (
+        <div class="event-wrapper" data-type={event.type}>
+          <EventCard event={event} />
+        </div>
+      ))}
+    </div>
+
+    <!-- Empty state -->
+    <div id="empty-state" class="hidden py-20 text-center text-stone-400">
+      <svg class="w-10 h-10 mx-auto mb-3 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0015.803 15.803z" />
+      </svg>
+      <p class="text-sm font-medium">No events match this filter.</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="border-t border-stone-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-stone-500">
+      <div class="font-serif">
+        <span class="font-bold text-[#9f1239]">L'EMbeDS</span>
+        <span class="text-stone-600"> DS³</span>
+        <span> · Sant'Anna School of Advanced Studies, Pisa</span>
+      </div>
+      <nav class="flex gap-5">
+        <a href="/" class="hover:text-stone-800 transition-colors">Home</a>
+        <a href="/events" class="hover:text-stone-800 transition-colors">All Events</a>
+        <a href="/credits" class="hover:text-stone-800 transition-colors">Credits & Links</a>
+      </nav>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .filter-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1.5px solid #e7e5e4;
+    color: #57534e;
+    background: white;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .filter-pill:hover { border-color: #a8a29e; color: #1c1917; }
+  .filter-pill.active { background: #1c1917; border-color: #1c1917; color: white; }
+  .filter-pill[data-filter="lecture"].active         { background: #2563eb; border-color: #2563eb; }
+  .filter-pill[data-filter="journal-club"].active    { background: #059669; border-color: #059669; }
+  .filter-pill[data-filter="science-meeting"].active { background: #d97706; border-color: #d97706; }
+  .pill-count {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 1.25rem; height: 1.25rem; border-radius: 9999px;
+    font-size: 0.75rem; font-weight: 600;
+    background: rgba(0,0,0,0.12); padding: 0 0.3rem;
+  }
+  .filter-pill.active .pill-count { background: rgba(255,255,255,0.25); }
+</style>
+
+<script>
+  const pills    = document.querySelectorAll<HTMLButtonElement>('.filter-pill');
+  const wrappers = document.querySelectorAll<HTMLElement>('.event-wrapper');
+  const empty    = document.getElementById('empty-state');
+  const countLbl = document.getElementById('count-label');
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const filter = pill.dataset.filter!;
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      let visible = 0;
+      wrappers.forEach(w => {
+        const show = filter === 'all' || w.dataset.type === filter;
+        w.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      if (countLbl) countLbl.textContent = `${visible} event${visible !== 1 ? 's' : ''}`;
+      if (empty) empty.classList.toggle('hidden', visible > 0);
+    });
+  });
+</script>
