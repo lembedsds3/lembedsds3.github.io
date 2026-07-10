@@ -19,7 +19,7 @@
     "affiliation": "",
     "website": "",
     "abstract": "",
-    "photo": "martial-laguerre.jpg"
+    "photo": ""
   },
   {
     "id": "2026-05-27-cloud",
@@ -41,7 +41,7 @@
     "affiliation": "",
     "website": "",
     "abstract": "This research examines the reliability of social networks reconstructed from textual corpora using entity co-occurrence methods. The study asks whether text-derived social graphs capture meaningful relational structure or are primarily artifacts of modelling decisions and noisy data. Five heterogeneous corpora are analyzed, including the Epstein files, the Mueller Report, Wikipedia biographies, Gutenberg novels, and Reuters news articles. The methodology combines network reconstruction, resampling, null-model comparison, community detection, and variance decomposition. Networks are built using different NLP pipelines, entity canonicalization strategies, and context definitions (sentence vs. paragraph windows). Stability is evaluated through repeated graph reconstructions and comparisons with randomized null models that preserve entity frequencies and context sizes while destroying co-occurrence structure. Results show that observed text networks consistently outperform null models across all corpora, indicating that co-occurrence patterns in real texts are strongly non-random and encode meaningful social structure. Community detection is also substantially more stable in observed networks, particularly for fictional narratives such as Gutenberg novels. The study’s main finding is that segmentation choices — especially sentence versus paragraph windows — are the dominant source of variation in inferred network structure, while differences between NLP tools contribute relatively little. Overall, the research provides a systematic framework for evaluating uncertainty and robustness in text-derived social network analysis.",
-    "photo": "lorenzo-emer.jpg"
+    "photo": ""
   },
   {
     "id": "2026-05-06-crippa",
@@ -107,7 +107,7 @@
     "affiliation": "",
     "website": "",
     "abstract": "Agent-based models (ABMs) are increasingly used to study complex economic phenomena such as endogenous growth, but their analysis typically relies on ad-hoc Monte Carlo exercises without formal statistical guarantees. We show how statistical model checking (SMC), and in particular Multi-VeStA, can automate and enrich the analysis of a seminal ABM: the Island Model of Fagiolo and Dosi, which captures the exploration-exploitation trade-off in technological search. We reproduce key stylized facts from the original model with formal confidence intervals, confirm the optimality of moderate exploration rates, and perform a counterfactual sensitivity analysis across returns to scale, skill transfer, and knowledge locality. Using MultiVeStA's built-in Welch's t-test, 6 out of 7 pairwise parameter comparisons yield statistically different growth trajectories, while the exception reveals a saturation effect in knowledge locality. Our results demonstrate that SMC offers a principled, reproducible methodology for the quantitative analysis of agent-based economic models.",
-    "photo": "stefano-blando.jpg"
+    "photo": ""
   },
   {
     "id": "2026-04-01-wang",
