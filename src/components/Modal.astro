@@ -38,9 +38,15 @@
     </div>
 
     <!-- Abstract body -->
-    <div class="px-6 py-5">
+    <div id="modal-abstract-section" class="px-6 py-5">
       <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Abstract</p>
       <p id="modal-abstract" class="text-base text-stone-700 leading-relaxed"></p>
+    </div>
+
+    <!-- Additional resources -->
+    <div id="modal-resources-section" class="px-6 py-5 border-t border-stone-100 hidden">
+      <p class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3">Additional Resources</p>
+      <ul id="modal-resources-list" class="space-y-2"></ul>
     </div>
   </div>
 </div>
@@ -77,6 +83,27 @@
     (document.getElementById('modal-title') as HTMLElement).textContent       = btn.dataset.title ?? '';
     (document.getElementById('modal-affiliation') as HTMLElement).textContent = btn.dataset.affiliation ?? '';
     (document.getElementById('modal-abstract') as HTMLElement).textContent    = btn.dataset.abstract ?? '';
+
+    const abstractSection = document.getElementById('modal-abstract-section') as HTMLElement;
+    abstractSection.classList.toggle('hidden', !btn.dataset.abstract);
+
+    const resourcesSection = document.getElementById('modal-resources-section') as HTMLElement;
+    const resourcesList    = document.getElementById('modal-resources-list') as HTMLElement;
+    const resources: { label: string; url: string }[] = JSON.parse(btn.dataset.resources || '[]');
+    resourcesList.innerHTML = '';
+    resources.forEach(({ label, url }) => {
+      const li = document.createElement('li');
+      const a  = document.createElement('a');
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = label;
+      a.className = 'inline-flex items-center gap-1.5 text-sm font-semibold hover:underline underline-offset-2';
+      a.style.color = SPEAKER_COLORS[type] ?? '#333';
+      li.appendChild(a);
+      resourcesList.appendChild(li);
+    });
+    resourcesSection.classList.toggle('hidden', resources.length === 0);
 
     const speaker = document.getElementById('modal-speaker') as HTMLAnchorElement;
     speaker.textContent = btn.dataset.speaker ?? '';

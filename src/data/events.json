@@ -151,7 +151,11 @@
     "affiliation": "University of Exeter",
     "website": "https://experts.exeter.ac.uk/19727-tim-lenton",
     "abstract": "Tipping points in climate science normally refer to small changes in the Earth system that unleash much broader, typically damaging impacts that accelerate climate change. Well-known examples are rising sea levels due to disintegration of the Greenland and West Antarctica ice sheets, or the release of methane from the thawing permafrost. They help to underline the urgency of climate action. Today most people understand we must reduce emissions – and very quickly.  In this webinar, Tim will summarise recent evidence regarding climate tipping points, which supports declarations that we are in a ‘climate emergency’. Then he will turn to identifying positive social tipping points that will need to be triggered to have any hope of limiting global warming to well below 2C.",
-    "photo": "tim-lenton.jpg"
+    "photo": "tim-lenton.jpg",
+    "resources": [
+      { "label": "Slides (PDF)", "url": "https://drive.google.com/file/d/16VAbdvggCo6si7kXQwlWA7WmhEg5q28R" },
+      { "label": "Global Tipping Points", "url": "https://global-tipping-points.org/" }
+    ]
   },
   {
     "id": "2026-01-21-mccartan",
@@ -162,7 +166,10 @@
     "affiliation": "Penn State University",
     "website": "https://corymccartan.com/",
     "abstract": "We introduce a new method for estimating the relationship between two variables at the individual level when only aggregated data are available. A common application in the US is estimating the voting preferences of different racial groups from aggregate election totals and census data. I will discuss how common approaches rely on overly strong assumptions and will present a new identifying assumption along with a more flexible, machine learning-based estimation method.  Time permitting, I will discuss an accompanying sensitivity analysis that can be used to probe the key identifying assumption.",
-    "photo": "cory-mccartan.jpg"
+    "photo": "cory-mccartan.jpg",
+    "resources": [
+      { "label": "Paper", "url": "https://arxiv.org/abs/2509.20194" }
+    ]
   },
   {
     "id": "2025-12-10-tripodi",
@@ -173,7 +180,11 @@
     "affiliation": "Northwestern University",
     "website": "https://www.giorgiotripodi.com/",
     "abstract": "Scientific discoveries and technological breakthroughs do not emerge in a vacuum. They are developed by individuals who follow heterogeneous career paths, engage in collaborations, and make strategic choices. Understanding scientists’ research trajectories is, therefore, a first step toward uncovering the hidden sources of creativity and innovation. In the US academic system, few institutions are more consequential than tenure. Tenure may serve as a selection mechanism (screening in high-output researchers), a dynamic incentive mechanism (stimulating pre-tenure productivity but dampening post-tenure output), and a creative search mechanism (enabling higher-risk exploration). To test these possibilities, we integrate data from seven sources to trace more than 12,000 faculty members across 15 disciplines. The analysis shows that publication rates rise sharply during the tenure track, peaking just before tenure. Post-tenure, however, trajectories diverge: lab-based fields sustain high output, while non-lab-based fields typically decline. Across fields, tenured faculty pursue more novel work but produce fewer highly cited papers. In addition, preliminary results highlight how scientific team structures and leadership roles shape collaboration outcomes and how individuals can remain productive and impactful in later career stages. Together, these findings underscore how institutional settings can influence the rate and direction of innovation, with implications for individual scholars, universities, and funding agencies.",
-    "photo": "giorgio-tripodi.jpg"
+    "photo": "giorgio-tripodi.jpg",
+    "resources": [
+      { "label": "Paper", "url": "https://www.pnas.org/doi/10.1073/pnas.2500322122" },
+      { "label": "Software (SciSciNet-v2)", "url": "https://github.com/kellogg-cssi/SciSciNet" }
+    ]
   },
   {
     "id": "2025-11-12-insolia",
@@ -184,6 +195,9 @@
     "affiliation": "University of Geneva",
     "website": "https://www.lucainsolia.com/",
     "abstract": "Equivalence testing aims to assess whether an effect of interest, such as the difference in means between two treatment outcomes, lies within a predetermined region of practical equivalence. Assessments of equivalence arise in several domains, such as economics, psychology and engineering, and they play a key role in the pharmaceutical sciences (e.g., for the regulatory approval of generic drug products). The standard method to assess equivalence, the Two One-Sided Tests (TOST) procedure, is known to be overly conservative, resulting in a loss of statistical power. To mitigate this problem in the context of averages and quantiles equivalence testing, we propose a general family of finite-sample adjustments for the TOST. These adjustments are designed to ensure that the theoretical test size matches the nominal significance level, leading to uniformly more powerful test procedures compared to the traditional TOST. We establish the theoretical properties of these adjusted procedures, and empirically demonstrate their superior performance through extensive simulations covering a range of challenging scenarios. These include multivariate assessments with relatively small sample sizes, unknown and heterogeneous variances, and various correlation structures. We illustrate the practical relevance of our approach through examples related to economics and the pharmaceutical sciences.",
-    "photo": "luca-insolia.jpg"
+    "photo": "luca-insolia.jpg",
+    "resources": [
+      { "label": "Code Repository", "url": "https://github.com/stephaneguerrier/cTOST" }
+    ]
   }
 ]
