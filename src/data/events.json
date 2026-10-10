@@ -1,5 +1,38 @@
 [
   {
+    "id": "2026-12-02-keller",
+    "date": "2026-12-02",
+    "type": "lecture",
+    "title": "TBD",
+    "speaker": "Klaus Keller",
+    "affiliation": "Dartmouth College",
+    "website": "https://keller-lab.github.io/",
+    "abstract": "",
+    "photo": "klaus-keller.jpg"
+  },
+  {
+    "id": "2026-11-11-lillo",
+    "date": "2026-11-11",
+    "type": "lecture",
+    "title": "TBD",
+    "speaker": "Fabrizio Lillo",
+    "affiliation": "Scuola Normale Superiore",
+    "website": "https://fabriziolillo.wordpress.com/",
+    "abstract": "",
+    "photo": "fabrizio-lillo.jpg"
+  },
+  {
+    "id": "2026-10-21-esposito",
+    "date": "2026-10-21",
+    "type": "lecture",
+    "title": "TBD",
+    "speaker": "Christian Esposito",
+    "affiliation": "Roche",
+    "website": "https://www.linkedin.com/in/espositochristian/",
+    "abstract": "",
+    "photo": "christian-esposito.jpg"
+  },
+  {
     "id": "2026-06-10-feldens",
     "date": "2026-06-10",
     "type": "lecture",

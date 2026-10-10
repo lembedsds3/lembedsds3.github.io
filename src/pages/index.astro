@@ -9,8 +9,11 @@ const allEvents = (eventsRaw as EventData[]).sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 );
 
-const recentEvents = allEvents.slice(0, 6);
-const totalCount   = allEvents.length;
+// Split at build time: events dated today or later are "upcoming" (soonest first)
+const todayStr       = new Date().toISOString().slice(0, 10);
+const upcomingEvents = allEvents.filter(e => e.date >= todayStr).reverse();
+const recentEvents   = allEvents.filter(e => e.date < todayStr).slice(0, 6);
+const totalCount     = allEvents.length;
 ---
 
 <Layout>
@@ -101,6 +104,23 @@ const totalCount   = allEvents.length;
       </p>
     </div>
   </div>
+
+  <!-- ── UPCOMING EVENTS ───────────────────────────────── -->
+  {upcomingEvents.length > 0 && (
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+
+      <div class="flex items-baseline justify-between mb-8">
+        <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-stone-900">Upcoming Events</h2>
+        <span class="text-sm text-stone-400">{upcomingEvents.length} scheduled</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {upcomingEvents.map(event => (
+          <EventCard event={event} />
+        ))}
+      </div>
+    </section>
+  )}
 
   <!-- ── RECENT EVENTS ─────────────────────────────────── -->
   <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
