@@ -3,11 +3,11 @@
     "id": "2026-12-02-keller",
     "date": "2026-12-02",
     "type": "lecture",
-    "title": "TBD",
+    "title": "How (not) to characterize climate-modulated risks in complex systems",
     "speaker": "Klaus Keller",
     "affiliation": "Dartmouth College",
     "website": "https://keller-lab.github.io/",
-    "abstract": "",
+    "abstract": "Humans face rising climate-modulated risks. For example, rising floods damage houses, intensifying fires disrupt power distribution, and more frequent extreme heat events harm human health. Understanding the drivers and dynamics of these risks poses nontrivial challenges. Two interacting challenges are (i) the deep and dynamic uncertainties surrounding model structures, parameter values, and model forcings and (ii) the complexity of the coupled natural-human systems. This talk reviews current and possible new approaches to tackle these interacting challenges.",
     "photo": "klaus-keller.jpg"
   },
   {
