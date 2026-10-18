@@ -9,6 +9,7 @@ export interface EventData {
   date: string;
   type: 'lecture' | 'journal-club' | 'science-meeting';
   mode?: 'online' | 'hybrid';
+  time?: string; // 'HH:MM', Rome local time
   title: string;
   speaker: string;
   affiliation: string;
@@ -64,6 +65,15 @@ const dateObj = new Date(event.date + 'T12:00:00');
 const formatted = dateObj.toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
+
+// Start time (Rome), with CET/CEST picked from the event date
+let timeLabel: string | null = null;
+if (event.time) {
+  const [h, m] = event.time.split(':').map(Number);
+  const tz = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', timeZoneName: 'short' })
+    .formatToParts(dateObj).find(p => p.type === 'timeZoneName')?.value ?? 'Rome';
+  timeLabel = `${h % 12 || 12}:${String(m).padStart(2, '0')} ${h < 12 ? 'AM' : 'PM'} ${tz}`;
+}
 
 const initials = event.speaker
   .split(/\s+/)
@@ -134,9 +144,14 @@ const initials = event.speaker
           </span>
         )}
       </div>
-      <time datetime={event.date} class="text-xs text-stone-400 font-medium tabular-nums">
-        {formatted}
-      </time>
+      <div class="flex flex-col items-end">
+        <time datetime={event.date} class="text-xs text-stone-400 font-medium tabular-nums">
+          {formatted}
+        </time>
+        {timeLabel && (
+          <span class="text-xs text-stone-400 font-medium tabular-nums">{timeLabel}</span>
+        )}
+      </div>
     </div>
 
     <!-- Title -->
