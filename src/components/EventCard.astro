@@ -8,6 +8,7 @@ export interface EventData {
   id: string;
   date: string;
   type: 'lecture' | 'journal-club' | 'science-meeting';
+  mode?: 'online' | 'hybrid';
   title: string;
   speaker: string;
   affiliation: string;
@@ -52,6 +53,12 @@ const cfg = {
     borderCls:  'border-amber-100',
   },
 }[event.type];
+
+// Attendance mode tag is shown only for upcoming events
+const todayStr = new Date().toISOString().slice(0, 10);
+const modeLabel = event.mode && event.date >= todayStr
+  ? { online: 'Online', hybrid: 'Hybrid' }[event.mode]
+  : null;
 
 const dateObj = new Date(event.date + 'T12:00:00');
 const formatted = dateObj.toLocaleDateString('en-US', {
@@ -117,9 +124,16 @@ const initials = event.speaker
 
     <!-- Type badge + date -->
     <div class="flex items-center justify-between mb-3">
-      <span class={`${cfg.badgeCls} text-white text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full`}>
-        {cfg.label}
-      </span>
+      <div class="flex items-center gap-1.5">
+        <span class={`${cfg.badgeCls} text-white text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full`}>
+          {cfg.label}
+        </span>
+        {modeLabel && (
+          <span class="bg-white border border-stone-300 text-stone-600 text-xs font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full">
+            {modeLabel}
+          </span>
+        )}
+      </div>
       <time datetime={event.date} class="text-xs text-stone-400 font-medium tabular-nums">
         {formatted}
       </time>
