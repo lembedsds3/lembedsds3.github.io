@@ -17,12 +17,12 @@
     "date": "2026-11-11",
     "type": "lecture",
     "mode": "hybrid",
-    "time": "15:00",
-    "title": "TBD",
+    "time": "16:00",
+    "title": "Reinforcement learning for optimal execution and trading in time-varying environments",
     "speaker": "Fabrizio Lillo",
     "affiliation": "Scuola Normale Superiore",
     "website": "https://fabriziolillo.wordpress.com/",
-    "abstract": "",
+    "abstract": "Optimal execution of large orders and optimal trading are classical problems in quantitative finance and of great importance for the financial industry. Most existing models make simplifying assumptions in order to achieve analytical tractability, most notably that the trading environment is constant. I will present some recent advancements obtained with Reinforcement Learning to optimal execution in a time varying liquidity environment and to optimal trading when the signal predictability is not constant. Then, I will consider the case of multiple RL agents simultaneously performing an optimal execution and I will show that the strategies learned by the agents deviate significantly from the Nash equilibrium of the corresponding market impact game.",
     "photo": "fabrizio-lillo.jpg"
   },
   {
