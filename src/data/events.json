@@ -18,11 +18,11 @@
     "type": "lecture",
     "mode": "hybrid",
     "time": "16:30",
-    "title": "Reinforcement learning for optimal execution and trading in time-varying environments",
+    "title": "Can Reinforcement Learning Agents Discover Effective Strategies for Price Manipulation and Tacit Collusion in Financial Markets?",
     "speaker": "Fabrizio Lillo",
     "affiliation": "Scuola Normale Superiore",
     "website": "https://fabriziolillo.wordpress.com/",
-    "abstract": "Optimal execution of large orders and optimal trading are classical problems in quantitative finance and of great importance for the financial industry. Most existing models make simplifying assumptions in order to achieve analytical tractability, most notably that the trading environment is constant. I will present some recent advancements obtained with Reinforcement Learning to optimal execution in a time varying liquidity environment and to optimal trading when the signal predictability is not constant. Then, I will consider the case of multiple RL agents simultaneously performing an optimal execution and I will show that the strategies learned by the agents deviate significantly from the Nash equilibrium of the corresponding market impact game.",
+    "abstract": "The advent of algorithmic trading and autonomous agents is significantly changing the trading process in financial markets and regulators and policy makers are increasingly worried that algorithms might discover manipulation or collusive behavior, even when not designed to do so. In this talk I will present two contributions in this discussion based on experiments in artificial markets with Reinforcement Learning (RL) agents. In the first I will show that a RL agent is able to identify price manipulation opportunities better than approaches based on traditional statistical methods. In the second I will consider a multi-agent RL setting where two RL agents simultaneously trading learn to tacitly collude and to deviate from the Nash equilibrium of the system.",
     "photo": "fabrizio-lillo.jpg"
   },
   {
