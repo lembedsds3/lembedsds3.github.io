@@ -16,14 +16,16 @@
     "id": "2026-11-11-lillo",
     "date": "2026-11-11",
     "type": "lecture",
-    "mode": "hybrid",
-    "time": "16:30",
     "title": "Can Reinforcement Learning Agents Discover Effective Strategies for Price Manipulation and Tacit Collusion in Financial Markets?",
     "speaker": "Fabrizio Lillo",
     "affiliation": "Scuola Normale Superiore",
     "website": "https://fabriziolillo.wordpress.com/",
     "abstract": "The advent of algorithmic trading and autonomous agents is significantly changing the trading process in financial markets and regulators and policy makers are increasingly worried that algorithms might discover manipulation or collusive behavior, even when not designed to do so. In this talk I will present two contributions in this discussion based on experiments in artificial markets with Reinforcement Learning (RL) agents. In the first I will show that a RL agent is able to identify price manipulation opportunities better than approaches based on traditional statistical methods. In the second I will consider a multi-agent RL setting where two RL agents simultaneously trading learn to tacitly collude and to deviate from the Nash equilibrium of the system.",
-    "photo": "fabrizio-lillo.jpg"
+    "photo": "fabrizio-lillo.jpg",
+    "resources": [
+      { "label": "Paper (SSRN)", "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7085738" },
+      { "label": "Paper (Annals of Operations Research)", "url": "https://link.springer.com/article/10.1007/s10479-026-07234-6" }
+    ]
   },
   {
     "id": "2026-10-21-esposito",
