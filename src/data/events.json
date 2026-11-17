@@ -1,5 +1,17 @@
 [
   {
+    "id": "2027-02-17-garcia-rosa",
+    "date": "2027-02-17",
+    "type": "lecture",
+    "mode": "online",
+    "title": "Female Employment, Time Constraints, and Household Food Consumption in Brazil",
+    "speaker": "Maria Victoria Garcia Rosa",
+    "affiliation": "Universidade Presbiteriana Mackenzie",
+    "website": "https://www.linkedin.com/in/maria-victoria-garcia-rosa-869b92a1/",
+    "abstract": "This paper examines how female employment shapes household food demand in Brazil, emphasizing the joint role of income and time constraints in intra-household allocation. Using data from the 2017–2018 Household Budget Survey (POF) and estimating a Quadratic Almost Ideal Demand System (QUAIDS), we compare price and expenditure elasticities across households with employed and non-employed women. The results indicate systematic differences in demand patterns across food groups. Ultra-processed foods exhibit relatively elastic demand, whereas in natura and minimally processed foods are generally inelastic. Importantly, households in which women are not employed display greater price sensitivity for ultra-processed foods, while elasticities are consistently smaller among households with employed women, indicating lower responsiveness to price changes. These findings are consistent with a framework in which female labor market participation relaxes income constraints but tightens time constraints, thereby reshaping household consumption choices. In particular, time scarcity may increase the relative attractiveness of convenience foods, even when these are more price responsive. From a policy perspective, price-based instruments targeting ultra-processed foods may reduce at-home consumption, but their effectiveness depends on household time constraints. Complementary policies aimed at alleviating time scarcity, such as access to childcare or time-saving services, may be necessary to promote healthier dietary patterns.",
+    "photo": "maria-victoria-garcia-rosa.jpg"
+  },
+  {
     "id": "2026-12-02-keller",
     "date": "2026-12-02",
     "type": "lecture",
