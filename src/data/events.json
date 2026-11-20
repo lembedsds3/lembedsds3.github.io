@@ -25,6 +25,17 @@
     "photo": "klaus-keller.jpg"
   },
   {
+    "id": "2026-11-25-porcedda-blando",
+    "date": "2026-11-25",
+    "type": "science-meeting",
+    "title": "ABMimic: An Agent-Based Benchmark for Evaluating LLM Alignment in Interactive Environments",
+    "speaker": "Riccardo Porcedda and Stefano Blando",
+    "affiliation": "",
+    "website": "",
+    "abstract": "As language models are deployed in interactive and multi-agent environments, it matters whether their behavior remains aligned with a specified policy. We introduce ABMimic, a benchmark that uses canonical agent-based models (ABMs) as controlled environments for measuring the behavioral alignment of LLM agents with a specified, executable agent policy. Because canonical ABMs provide known decision rules, emergent population dynamics, and an intrinsic stochastic baseline, they enable alignment to be evaluated both at the level of individual decisions and at the level of collective behavior. ABMimic progressively replaces agents with LLM-controlled agents, scores each LLM decision against the canonical rule, and estimates the deployment fraction at which the population becomes detectably different from the reference model; synthetic agents with known deviations measure, before any LLM is run, which departures the test can detect. Across four canonical ABMs, five tasks and twelve open-weight LLMs, the levels disagree. Models with the same decision-level agreement (κ ≈ 0.94) range from a population detectably changed at 6% deployment to one still compatible at full deployment. LLM errors are not random noise: depending on their direction, the environment masks them by two orders of magnitude or amplifies them. Withholding the policy turns every core model’s Deffuant decisions against the rule, and a generation seed shared across requests makes nominally independent agents share one random draw. These results suggest that behavioral alignment cannot be assessed from isolated model behavior or aggregate outcomes alone. It is deployment-dependent: small local deviations may remain hidden at low exposure yet become consequential when replicated across an interacting population. ABMimic provides a controlled framework for measuring both local policy alignment and the system-level tolerance to imperfectly aligned agents.",
+    "photo": ""
+  },
+  {
     "id": "2026-11-11-lillo",
     "date": "2026-11-11",
     "type": "lecture",
