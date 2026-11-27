@@ -25,6 +25,18 @@
     "photo": "klaus-keller.jpg"
   },
   {
+    "id": "2026-12-02-bessa",
+    "date": "2026-12-02",
+    "type": "journal-club",
+    "time": "10:00",
+    "title": "e-means: Outperforming k-means (in One-Tenth the Epochs)",
+    "speaker": "Bessa, Swann, et al.",
+    "affiliation": "arXiv:2611.09501 (2026)",
+    "website": "https://arxiv.org/pdf/2611.09501v1",
+    "abstract": "Discussion of Bessa, Swann, et al. (2026), arXiv:2611.09501.",
+    "photo": ""
+  },
+  {
     "id": "2026-11-25-porcedda-blando",
     "date": "2026-11-25",
     "type": "science-meeting",
